@@ -102,7 +102,7 @@ async function onMessage (message) {
       let keyroom = await bot.Room.find({ topic: '限免速递 合作预备群' })
       if (await keyroom.has(contact)) {
         setTimeout(() => {
-          message.say('我已经添加你到我们的会员售前群了哦，回到聊天列表仔细找找呢。')
+          message.say('我已经添加你到我们的合作预备群了哦，回到聊天列表仔细找找呢。')
         }, 1000 * 10 * (Math.random() * 0.3 + 0.1))
       } else {
         await keyroom.add(contact)
@@ -123,7 +123,7 @@ async function onMessage (message) {
       let keyroom = await bot.Room.find({ topic: '限免速递 外包预备群' })
       if (await keyroom.has(contact)) {
         setTimeout(() => {
-          message.say('我已经添加你到我们的会员售前群了哦，回到聊天列表仔细找找呢。')
+          message.say('我已经添加你到我们的外包交流群了哦，回到聊天列表仔细找找呢。')
         }, 1000 * 10 * (Math.random() * 0.3 + 0.1))
       } else {
         await keyroom.add(contact)
@@ -133,7 +133,7 @@ async function onMessage (message) {
       let keyroom = await bot.Room.find({ topic: '限免速递 创投预备群' })
       if (await keyroom.has(contact)) {
         setTimeout(() => {
-          message.say('我已经添加你到我们的会员售前群了哦，回到聊天列表仔细找找呢。')
+          message.say('我已经添加你到我们的创投预备群了哦，回到聊天列表仔细找找呢。')
         }, 1000 * 10 * (Math.random() * 0.3 + 0.1))
       } else {
         await keyroom.add(contact)
@@ -153,7 +153,7 @@ async function onMessage (message) {
       let keyroom = await bot.Room.find({ topic: '限免速递 技术预备群' })
       if (await keyroom.has(contact)) {
         setTimeout(() => {
-          message.say('我已经添加你到我们的会员售前群了哦，回到聊天列表仔细找找呢。')
+          message.say('我已经添加你到我们的技术交流群了哦，回到聊天列表仔细找找呢。')
         }, 1000 * 10 * (Math.random() * 0.3 + 0.1))
       } else {
         await keyroom.add(contact)
@@ -163,7 +163,7 @@ async function onMessage (message) {
       let keyroom = await bot.Room.find({ topic: '限免速递 粉丝福利群' })
       if (await keyroom.has(contact)) {
         setTimeout(() => {
-          message.say('我已经添加你到我们的会员售前群了哦，回到聊天列表仔细找找呢。')
+          message.say('我已经添加你到我们的粉丝福利群了哦，回到聊天列表仔细找找呢。')
         }, 1000 * 10 * (Math.random() * 0.3 + 0.1))
       } else {
         await keyroom.add(contact)
@@ -175,7 +175,7 @@ async function onMessage (message) {
   }
 }
 
-const bot = new Wechaty()
+const bot = new Wechaty({profile: 'wechatyName'})
 
 bot.on('friendship',  onFriendShip)
 bot.on('scan',    onScan)
