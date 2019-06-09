@@ -1,0 +1,37 @@
+{
+  "name": "wechaty-getting-started",
+  "version": "0.1.0",
+  "description": "Wechaty is a Wechat Bot SDK for Personal Account in Node.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "postinstall": "check-node-version --node \">= 10\"",
+    "start": "nodemon examples/starter-bot.js",
+    "test": "node tests/smoke-testing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chatie/wechaty-getting-started.git"
+  },
+  "keywords": [],
+  "author": "Huan LI <zixia@zixia.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chatie/wechaty-getting-started/issues"
+  },
+  "homepage": "https://github.com/Chatie/wechaty-getting-started#readme",
+  "dependencies": {
+    "brolog": "^1.4.9",
+    "file-box": "^0.8.22",
+    "nodemon": "^1.19.1",
+    "puppeteer": "^1.17.0",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^0.22.1",
+    "wechaty-puppet": "^0.14.1"
+  },
+  "devDependencies": {
+    "check-node-version": "^3.2.0"
+  }
+}
