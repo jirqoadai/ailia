@@ -8,7 +8,7 @@
   },
   "scripts": {
     "postinstall": "check-node-version --node \">= 10\"",
-    "start": "nodemon examples/starter-bot.js",
+    "start": "node examples/starter-bot.js",
     "test": "node tests/smoke-testing.js"
   },
   "repository": {
